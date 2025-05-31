@@ -1,8 +1,10 @@
-.footbelow{
-  height: 400px;
+footer{
+  height: 40px;
+  width: 100%;
   background-color: brown;
+  text-align: center;
 }
 
 p{
-  padding: 100px 100px;
+  padding: 10px 5px;
 }
