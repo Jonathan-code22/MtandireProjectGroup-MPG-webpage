@@ -25,6 +25,7 @@
   border-radius: 4px;
   box-shadow: inset 1px 2px 5px rgba(0,0, 0,0.05);
   margin-left: 10px;
+  width: 0;
 }
 
 .search-bar::placeholder{
@@ -39,7 +40,7 @@
   width: 180px;
   flex-shrink: 0;
   justify-content: space-between;
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
 .home-button{

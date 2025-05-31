@@ -175,7 +175,76 @@ const photos = [
    description: "Two project team members and psychosocial counselor providing counselling service to teenage mother's family",
    author: 'By <strong>Psychosocial counselor and project team members</strong>' 
   },
-  
+  {image: 'resized images/Atu educational session .png',
+   eventType: 'ADVOCATE FOR EDUCATION SUPPORT TO TEENAGE MOTHER',
+   profilePic: 'PHOTOS/Icon.png',
+   title: '<strong>Educational session</strong>',
+   description: "Motivating parents and chiefs to continue giving education support to teen mothers",
+   author: 'By <strong>Atupere K. Sichali</strong>' 
+  },
+  {image: 'resized images/Education session by fridah.png',
+   eventType: 'ADVOCATE FOR EDUCATION SUPPORT TO TEENAGE MOTHER',
+   profilePic: 'PHOTOS/Icon.png',
+   title: '<strong>Educational session</strong>',
+   description: "Project memeber educating parents and chiefs to continue giving education support to teen mothers",
+   author: 'By <strong>Fridajie B. Mulwafu</strong>' 
+  },
+  {image: 'resized images/Education session by Atupele.png',
+   eventType: 'ADVOCATE FOR EDUCATION SUPPORT TO TEENAGE MOTHER',
+   profilePic: 'PHOTOS/Icon.png',
+   title: '<strong>Educational session</strong>',
+   description: "Project memeber educating parents and chiefs to continue giving education support to teen mothers",
+   author: 'By <strong>Atupele Sichali</strong>' 
+  },
+  {image: 'resized images/Empowerment by Frank.png',
+   eventType: 'ADVOCATE FOR EDUCATION SUPPORT TO TEENAGE MOTHER',
+   profilePic: 'PHOTOS/Icon.png',
+   title: "<strong>Empowering Parents and NGO's</strong>",
+   description: "Empowering parents to continue giving education support to teen mothers",
+   author: 'By <strong>Frank K. Mlowoka</strong>' 
+  },
+  {image: 'resized images/Empowerment by Para.png',
+   eventType: 'ADVOCATE FOR EDUCATION SUPPORT TO TEENAGE MOTHER',
+   profilePic: 'PHOTOS/Icon.png',
+   title: "<strong>Empowering Parents and NGO's</strong>",
+   description: "Social worker empowering parents to continue giving education support to teen mothers",
+   author: 'By <strong>Madam Paranjeta</strong>' 
+  },
+  {image: 'resized images/Empowerment session by Fridah.png',
+   eventType: 'ADVOCATE FOR EDUCATION SUPPORT TO TEENAGE MOTHER',
+   profilePic: 'PHOTOS/Icon.png',
+   title: "<strong>Empowering Parents and NGO's</strong>",
+   description: "Empowering parents to continue giving education support to teen mothers",
+   author: 'By <strong>Fridah B. Mulwafu</strong>' 
+  },
+  {image: 'resized images/Empowerment by atupele.png',
+   eventType: 'ADVOCATE FOR EDUCATION SUPPORT TO TEENAGE MOTHER',
+   profilePic: 'PHOTOS/Icon.png',
+   title: "<strong>Empowering Parents and NGO's</strong>",
+   description: "Project memeber educating parents and chiefs to continue giving education support to teen mothers",
+   author: 'By <strong>Atupele Sichali</strong>' 
+  },
+  {image: 'resized images/Feild supervisor  empowerment session.png',
+   eventType: 'ADVOCATE FOR EDUCATION SUPPORT TO TEENAGE MOTHER',
+   profilePic: 'PHOTOS/Icon.png',
+   title: "<strong>Empowering Parents and NGO's</strong>",
+   description: "Field supervisor empowering parents to continue giving education support to teen mothers",
+   author: 'By <strong> Madam Paranjeta</strong>' 
+  },
+  {image: 'resized images/home vis.jpg',
+   eventType: "STRENGTHENING FAMILY AND PARTNER'S SUPPORT",
+   profilePic: 'PHOTOS/Icon.png',
+   title: "<strong>Door to door visit</strong>",
+   description: "Restoring relationships of disrupted families of teenage mother",
+   author: 'By <strong>Blessings Chaomba</strong>' 
+  },
+  {image: 'resized images/Home vis.png',
+   eventType: "STRENGTHENING FAMILY AND PARTNER'S SUPPORT",
+   profilePic: 'PHOTOS/Icon.png',
+   title: "<strong>Session for educate partners</strong>",
+   description: "providing education to teenage mothers' partners on the challenges faced and solutions",
+   author: 'By <strong>Blessings Chaomba and Fridajie Mulwafu</strong>' 
+  },
   {image: 'PHOTOS/supervision (2).png',
    eventType: 'SUPERVISION BY THE DEPARTMENT',
    profilePic: 'PHOTOS/Icon.png',
@@ -190,4 +259,5 @@ const photos = [
    description: 'Official supervision day',
    author: 'By <strong> Project team</strong>' 
   },
+  //Other photos are reserved for image slider
 ];
