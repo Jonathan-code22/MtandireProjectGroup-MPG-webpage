@@ -40,3 +40,32 @@ body{
   font-weight: bold;
   cursor: pointer;
 }
+
+#popup{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#popu img{
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid white;
+  border-radius: 8px;
+}
+
+#popup span{
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}

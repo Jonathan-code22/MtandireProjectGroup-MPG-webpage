@@ -10,7 +10,7 @@ photos.forEach((photos) => {
         <p class = "stakeholder-meeting-heading">
           ${/*highlight*/(photos.eventType /*, searchTerm*/)}
         </p>    
-        <img class="gvh-photo" src = "${photos.image}">
+        <img class="gvh-photo" src = "${photos.image}" ondblclick="openFullImage('${photos.image}')" alt="${photos.author}">
       </div>
       <div class = "photo-info-grid">
         <div class="profile-picture-insidediv">
@@ -167,3 +167,22 @@ document.getElementById('toggleBtn').addEventListener('click', () => {
 
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+
+function openFullImage(src) {
+  const popup = document.getElementById("popup");
+  const popupImg = document.getElementById("popup-img");
+
+  if (popup && popupImg) {
+    popupImg.src = src;
+    popup.style.display = "flex";
+  } else{
+    console.error("Popup elements not found!");
+  }
+
+}
+
+function closeFullImage() {
+  const popup = document.getElementById("popup");
+  if (popup) popup.style.display = "none";
+}
