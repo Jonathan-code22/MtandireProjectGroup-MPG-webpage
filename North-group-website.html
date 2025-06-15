@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lan = "en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      North group web
+    </title>
+
+    <link rel="stylesheet" href="Styles/General.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/Photo.css"> 
+    <link rel="stylesheet" href="Styles/sidebar.css">
+    <link rel="stylesheet" href="Styles/Responsive-design.css">
+  </head>
+
+  <body>
+
+    <div class = "header">
+      <div class = "left-section">
+        <div class="home-button-container">
+          <img class="home-button" src="ICONS/home-page.jpeg">
+          <div class="tooltip">Home page</div>
+        </div>
+        <div class="North-text">
+          <p><strong>NorthProjectGroup</strong></p>
+        </div>
+      </div>
+      
+      <div class = "middle-section">
+        <input class = "search-bar" id="searchBar" type ="text" placeholder="search">
+          <button class="search-button js-search-button">
+          <img class="search-icon" src="ICONS/search bar.png">
+        <div class="tooltip">search</div>
+        </button>
+          <button class = "voice-search-button js-voice-search-button">
+          <img class="voice-search-icon" src="ICONS/voice-icon.png">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+        <p class = 'listeningStatus'>🎧Listening......</p>
+      </div>
+      <div class = "right-section">
+        <div class="notification-button-container">
+          <img class=" notification-icon" src="ICONS/notification.png">
+          <div class="tooltip">Notifications</div>
+          <div class="notifications-count">12</div>
+        </div>
+        <div class="profile-container">
+          <img class = "profile-icon" src="ICONS/profile.png">
+          <div class="tooltip">Insert your profile picture</div>
+        </div>
+      </div> 
+    </div>
+     
+    <div class="side-bar" id="sideBar">
+      <button id = "toggleBtn" class="cancel">
+        <span>X</span>
+      </button>
+      <div class="sidebar-link sidebar-link-2" id="sideBarlink"onclick="window.location.href = 'Files-menu.html'">
+        <img class = "page-button" src="ICONS/humberga-menu.png">
+          <span>Files menu</span>
+      </div>
+      <div class="sidebar-link" id="sideBarlink"onclick="window.location.href = 'More-photos.html'">
+        <img class = "content-button" src="ICONS/pictures.png" id = "collection">
+          <span>More photos</span>
+      </div>
+      <div class="sidebar-link" id="sideBarlink"onclick="window.location.href='Videos.html'">
+        <img class = "content-button" src="ICONS/video.png" id = "collection" >
+          <span>Videos</span>
+      </div>
+      <div class="sidebar-link"onclick="window.location.href = 'About-Us.html'">
+        <img class= "about-button" src = "ICONS/about-group.png">
+          <span>About the group</span>
+      </div>
+      <div class="sidebar-link"onclick="window.location.href = 'Contact-us.html'">
+        <img class = "contact-button" src="ICONS/Contact-us.png">
+          <span>Contact Us</span>
+      </div>
+      <div class="sidebar-link"onclick="window.location.href = 'Developer.html'">
+        <img class = "contact-button" src="ICONS/help.png">
+          <span>Developer</span>
+      </div>
+    </div> 
+
+    <div class = "photo-grid js-photo-grid" id = "photoGrid"> 
+    </div>
+
+    <script src="GenerateHtmlByJs/photosObject.js"></script>  
+    <script src = "scripts/myscript.js"></script>
+    
+  </body>
+</html>

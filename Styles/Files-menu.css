@@ -1,0 +1,33 @@
+.Input-adminCode-container{
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+#adminCode{
+  position: relative;
+  width: 300px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-left: 50px;
+  border-style: solid;
+ 
+}
+
+.password-submit-btn{
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 102px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+#uploadSection{
+  display: none;
+}
+
+.uploadSection-container{
+  margin-top: 50px;
+  margin-left: 150px;
+}
