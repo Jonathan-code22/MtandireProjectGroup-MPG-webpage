@@ -1,0 +1,77 @@
+.side-bar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 65px;
+  background-color: rgb(160, 75, 18);
+  width: 100px;
+  color: white;
+  z-index: 200;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgb(255, 251, 246);
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+.sidebar-link{
+  display: flex;
+  align-items: center;  /* This places items vertically centered works only when we say display=flex. While Justify-content = center- places our contents horizontally centered works only when we say display=flex*/
+  padding: 10px 5px;              
+  border: 2px;
+  border-color: rgb(247, 222, 205);
+  transition: all 0.5s ease;
+  font-size: 16px;
+  /*flex-direction: row; this can be left out since when we display: flex; items appear besides each other*/
+}
+.sidebar-link img{
+  margin-right: 6px;
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-link:hover{
+  background-color: rgb(236, 213, 197);
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.side-bar .cancel{
+  position: absolute;   /* position abosolute works with both position+ fixed and p relative. in fixed, it is used to place items in unmovable contents like here in the side bar. while in relative, p abosolute is placed in moveable items hence p relative is taken as fixed or vice versa (when in p fixed, position fixed is taken as position relative)*/
+  top: -3px;
+  right: -4px;
+  background-color: none;
+  color: #161616;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+  margin: 6px;
+  cursor: pointer;
+  padding: 3px 4px; 
+  transition: all 0.5s ease;
+}
+
+.side-bar .cancel:hover{
+  background-color: #fa0707;
+  color: rgb(255, 255, 255);
+}
+
+.side-bar.collapsed{
+  width: 60px;
+}
+
+.side-bar.collapsed:hover{
+  width: 160px;
+}
+.side-bar.collapsed .sidebar-link span{
+  display: none;
+}
+.side-bar.collapsed .sidebar-link{
+  justify-content: center;
+}
+.side-bar.collapsed:hover .sidebar-link span{
+  display: block;
+}
+
+.side-bar.collapsed:hover .sidebar-link {
+  justify-content: flex-start;
+}

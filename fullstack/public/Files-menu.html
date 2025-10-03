@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Files-menu</title>
+  <link rel="stylesheet" href="styles/Files-menu.css">
+</head>
+<body>
+<!--<div>
+    <div class="Input-adminCode-container">
+      <input type="password" id="adminCode" placeholder="Enter admin code to upload files">
+      <button class="password-submit-btn" onclick="checkCode()">Access upload</button>
+  </div>
+
+    <div id = "uploadSection" class="uploadSection-container">
+      <input id = "fileInput" type="file" accept="image/*, video/*, application/*" multiple />
+      <button class="upload-btn" onclick="uploadMedia()" >Upload</button>
+      <div id="preview" class="preview-container"></div>
+    </div>
+  </div> -->
+
+
+  <h1>Upload your files</h1>
+
+  <form id ="uploadForm" enctype="multipart/form-data">
+    <input type="file" name="myfile" id="myfile" required>
+    <button type="submit"> Upload</button>
+  </form>
+
+  <button id="listBtn">List Uploaded Files</button>
+  <div class="msg" id="msg"></div>
+  <ul id="fileList"></ul>
+
+    <script > 
+      const form = document.getElementById('uploadForm');
+      const msg = document.getElementById('msg');
+      const listBtn = document.getElementById('listBtn');
+      const fileList = document.getElementById('fileList');      
+
+
+      form.addEventListener('submit', async(e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const res = await fetch('http://localhost:5000/upload', {
+          method: 'POST',
+          body: formData
+        });
+        const data = await
+        res.json();
+        if (data.success){
+          msg.textContent = data.message + '\nFiles'+
+           data.files.join (' , ');
+        } else {
+          msg.textContent = 'Upload failed' + data.message;
+        }
+      });
+
+      listBtn.addEventListener('click',
+        async () => {
+          const res = await fetch('http://localhost:5000/files');
+          const data = await res.json();
+          fileList.innerHTML = '';
+          if (data.success){
+            data.files.forEach(f => {
+              const li = 
+              document.createElement('li');
+              li.textContent = f;
+              fileList.appendChild(li);
+            });
+          } else {
+            fileList.textContent = 'Error loading files';
+          }
+        }
+      )
+    </script>
+
+<!--<script src="scripts/FilesUpload.js"></script>-->
+</body>
+</html>
