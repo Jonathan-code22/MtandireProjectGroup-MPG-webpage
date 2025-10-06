@@ -40,7 +40,7 @@ photos.forEach((photos) => {
 document.querySelector('.js-photo-grid').innerHTML = photosHTML;
 }
 
-renderPhotos(photos);
+//renderPhotos(photos);
 
 const searchInput = document.querySelector('#searchBar');
 const searchButton = document.querySelector('.js-search-button');
