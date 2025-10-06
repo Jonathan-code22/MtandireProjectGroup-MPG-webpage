@@ -1,4 +1,4 @@
-/*
+
 function checkCode() {
   const code = document.getElementById('adminCode').value;
   if (code === 'Mtandire123') {
@@ -55,4 +55,4 @@ window.addEventListener('load', () => {
   if (localStorage.getItem('uploadAccess')=== 'true'){
     document.getElementById('uploadSection').style.display = 'block';
   }
-});*/
+});
